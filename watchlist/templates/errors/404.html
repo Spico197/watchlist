@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="{{ url_for('static', filename='images/3232.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+  <title>Oops</title>
+</head>
+<body>
+  <h2>{{ user.name }}'s watchlist</h2>
+   
+  <ul class="movie-list">
+    <li>
+      The page you request is not exist...
+      <span>
+        <a href="{{ url_for('hello', user=user) }}">Go back home</a>
+      </span>
+    </li>
+  </ul>
+  <footer>
+    <small>
+      &copy;<a href="https://spico197.github.io">Spico</a>
+    </small>
+  </footer>
+</body>
+</html> -->
+
+{% extends 'base.html' %}
+{% block content %}
+<ul class="movie-list">
+  <li>
+    Page not found - 404
+    <span class="float-right">
+      <a href="{{ url_for('hello') }}">Go Back Home</a>
+    </span>
+  </li>
+</ul>
+{% endblock %}

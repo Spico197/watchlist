@@ -1,2 +1,4 @@
 # watchlist
-a flask-based small project from helloflask
+A small project to learn flask basics. 
+
+Turorial from [helloflask](http://helloflask.com/tutorial/).
